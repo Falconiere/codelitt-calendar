@@ -117,12 +117,14 @@ const ReminderForm = ({
         }}
       />
       <Divider />
-      <div className={`flex gap-2 justify-${onRemove ? "between" : "end"}`}>
-        {onRemove && (
-          <Button variant="destroy" type="button" onClick={onRemove}>
-            Remove
-          </Button>
-        )}
+      <div className={"flex gap-2 justify-between"}>
+        <div>
+          {onRemove && (
+            <Button variant="destroy" type="button" onClick={onRemove}>
+              Remove
+            </Button>
+          )}
+        </div>
         <div className="flex gap-2">
           <Button variant="secondary" type="button" onClick={onCancel}>
             Cancel
