@@ -4,10 +4,11 @@ This projects is a exercise from [Codelitt](https://www.codelitt.com/). The proj
 
 The project is a simple calendar that allows the user to create reminders for a specific day and time. The user can also edit and delete the reminders. No library was used to create the calendar component, the ui and logic was mostly built from scratch. 
 ## Quick overview
-<video
-  controls
-  src="./assets/quick-demo.mp4"
-  type="video/mp4" />
+
+<figure class="video_container">
+  <iframe src="./assets/quick-demo.mp4" frameborder="0" allowfullscreen="true"> 
+</iframe>
+</figure>
 ## How to run the project locally
 To run the project you need to have [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed on your machine. After that, you can run the following commands:
 
