@@ -3,13 +3,12 @@
 This projects is a exercise from [Codelitt](https://www.codelitt.com/). The project was bootstrapped with [Create React App](https://create-react-app.dev/). 
 
 The project is a simple calendar that allows the user to create reminders for a specific day and time. The user can also edit and delete the reminders. No library was used to create the calendar component, the ui and logic was mostly built from scratch. 
-## Quick overview
 
-<figure class="video_container">
-  <iframe src="./assets/quick-demo.mp4" frameborder="0" allowfullscreen="true"> 
-</iframe>
-</figure>
+## Quick overview
+![](assets/quick-demo.mp4)
+
 ## How to run the project locally
+
 To run the project you need to have [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed on your machine. After that, you can run the following commands:
 
 
