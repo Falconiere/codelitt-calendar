@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+# Getting Started with Codelitt Calendar
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This projects is a exercise from [Codelitt](https://www.codelitt.com/). The project was bootstrapped with [Create React App](https://create-react-app.dev/). 
 
-## Available Scripts
+The project is a simple calendar that allows the user to create reminders for a specific day and time. The user can also edit and delete the reminders. No library was used to create the calendar component, the ui and logic was mostly built from scratch. 
+## Quick overview
+<video
+  controls
+  src="./assets/quick-demo.mp4"
+  type="video/mp4" />
+## How to run the project locally
+To run the project you need to have [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed on your machine. After that, you can run the following commands:
 
-In the project directory, you can run:
+
+### `yarn install`
+
+To run the project in development mode.
 
 ### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To run the project in development mode.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## How to run the tests
 
-### `yarn test`
+To run the tests you need to run the following command:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `yarn coverage`
 
-### `yarn build`
+## About the folder structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+I tried to use a folder structure that is easy to understand and to navigate. The main folders are:
+- `src`: The main folder of the project.
+- `src/assets`: The folder that contains all the assets of the project. Ex: images, fonts, icons, etc.
+- `src/components`: The folder that contains all the components of the project that are globally shared.
+- `src/constants`: The folder that contains all the constants of the project that are shared between components.
+- `src/domains`: The folder that contains all the files related to specific domain. Ex: Calendar, EditReminder, etc.
+- `src/hooks`: The folder that contains all the custom hooks of the project that are not related to a specific domain.
+- `src/providers`: The folder that contains all the providers of the project.
+- `src/router`: The folder that contains all the files related to the router of the project.
+- `src/screens`: The folder that contains all the screens of the project.
+- `src/store`: The folder that contains all the files related to the global state of the project.
+- `src/utils`: The folder that contains all the utils that are not related to a specific domain.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+it's important to mention that the `src/domains` folder is organized in a way that each domain has its own folder and inside of it there are the following folders:
+- `components`: The folder that contains all the components of the domain.
+- `containers`: The folder that contains all the containers of the domain.
+- `hooks`: The folder that contains all the hooks of the domain.
+- `utils`: The folder that contains all the utils of the domain.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+With the domain folder structure, it's easy to understand what is related to each domain and to navigate between the files. It's easy to find the components, containers, hooks and utils, making the code more maintainable.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## About the libraries
+Only a few libraries were used in the project. The main libraries are:
+- [React](https://reactjs.org/): The main library of the project.
+- [React Router](https://reactrouter.com/): The library used to handle the routes of the project.
+- [Tailwind CSS](https://tailwindcss.com/): The library used to style the project.
+- [React hook form](https://react-hook-form.com/): The library used to handle the forms of the project.
+- [Date-fns](https://date-fns.org/): The library used to handle the dates of the project, ex: format
+- [zustand](https://docs.pmnd.rs/zustand/getting-started/introduction): The library used to handle the global state of the project.
+- [use-mask-input](https://github.com/eduardoborges/use-mask-input): The library used to handle the mask of the inputs.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## CTA
+I had a lot of fun building this project. I tried to use the best practices and to follow the SOLID principles. I also tried to use the best patterns to make the code more maintainable. I also tried to use the best libraries to make the project more performatic.I hope you enjoy the project. If you have any question, please let me know. I will be happy to answer it.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
